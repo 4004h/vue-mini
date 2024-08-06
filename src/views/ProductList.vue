@@ -1,21 +1,36 @@
 <template>
-  <HeaderArea/>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
-  <FooterArea/>
+  <div class="">
+    <!-- 내용을 추가하세요 -->
+  </div>
 </template>
 
 <script>
-import FooterArea from './layout/FooterArea.vue';
-import HeaderArea from './layout/HeaderArea.vue';
-
 export default {
-  name: 'App',
+  name: 'ProductList',
+  props: {
+    // 문자열 타입의 prop 예시
+    //sampleString: {
+    //  type: String,
+    //  default: ''
+    //},
+    // 숫자 타입의 prop 예시
+    //sampleNumber: {
+    //  type: Number,
+    //  default: 0
+    //},
+    // 배열 타입의 prop 예시
+    //sampleArray: {
+    //  type: Array,
+    //  default: () => []
+    //},
+    // 객체 타입의 prop 예시
+    //sampleObject: {
+    //  type: Object,
+    //  default: () => ({})
+    //}
+  },
   components: {
-    HeaderArea, FooterArea
+    // 추가적으로 사용할 컴포넌트들을 등록합니다.
   },
   data() {
     return {
@@ -55,25 +70,6 @@ export default {
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+<style scoped>
+/* 스타일을 추가하세요 */
 </style>
